@@ -66,3 +66,23 @@ button:hover {
 .back-btn:hover {
     text-decoration: underline;
 }
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+option {
+    font-size: 16px;
+    background-color: #fff;
+}

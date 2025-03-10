@@ -238,6 +238,27 @@
     cursor: pointer;
     font-size: 20px;
 }
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+option {
+    font-size: 16px;
+    background-color: #fff;
+}
+
 
     </style>
 </head>
@@ -261,8 +282,13 @@
                 <input type="hidden" name="action" value="add">
                 <input type="text" name="topic" placeholder="Enter topic" required>
                 <input type="text" name="content" placeholder="Enter content" required>
-                <input type="text" name="time" placeholder="Time" required>
-                <input type="text" name="status" placeholder="Status" required>
+                <input type="time" name="time" placeholder="Time" required>
+
+                <select name="status" required>
+				    <option value="" disabled selected>Select Status</option>
+				    <option value="pending">Pending</option>
+				    <option value="completed">Completed</option>
+				</select>
                 <button type="submit" class="btn">Add Task</button>
             </form>
         </div>
@@ -319,8 +345,9 @@
                 <td><%= rs.getString("time") %></td>
                 <td><%= rs.getString("status") %></td>
                 <td>
+                <a class="btn edit" href="update.jsp?taskId=<%= rs.getInt("id") %>">Edit</a>
                     <a class="btn delete" href="Todo?action=delete&taskId=<%= rs.getInt("id") %>">Delete</a> 
-                    <a class="btn edit" href="update.jsp?taskId=<%= rs.getInt("id") %>">Edit</a>
+                    
                 </td>
             </tr>
             <% } %>
