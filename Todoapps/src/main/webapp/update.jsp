@@ -87,8 +87,8 @@ option {
 				readonly> <label>Content:</label> <input type="text"
 				name="content" value="<%=rs.getString("content")%>" required>
 
-			<label>Time:</label> <input type="time" name="time"
-				value="<%=rs.getString("time")%>" readonly> <label>Status:</label>
+			<label>Time:</label> <input type="datetime-local" name="time"
+				value="<%=rs.getString("time")%>" > <label>Status:</label>
 
 			<select name="status" value="<%=rs.getString("status")%>" required>
 				<option value="" disabled selected>Select Status</option>

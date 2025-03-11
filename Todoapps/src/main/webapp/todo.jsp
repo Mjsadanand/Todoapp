@@ -103,6 +103,7 @@
         }
         .container {
             width: 100%;
+            height:90vh;
             padding: 20px;
         }
         .btn {
@@ -282,8 +283,7 @@ option {
                 <input type="hidden" name="action" value="add">
                 <input type="text" name="topic" placeholder="Enter topic" required>
                 <input type="text" name="content" placeholder="Enter content" required>
-                <input type="time" name="time" placeholder="Time" required>
-
+                <input type="datetime-local" name="time" required>
                 <select name="status" required>
 				    <option value="" disabled selected>Select Status</option>
 				    <option value="pending">Pending</option>
@@ -334,7 +334,7 @@ option {
             <tr>
                 <th>Topic</th>
                 <th>Content</th>
-                <th>Time</th>
+                <th>Date and Time</th>
                 <th>Status</th>
                 <th>Action</th>
             </tr>
