@@ -1,31 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="5.0">
+<web-app version="5.0"
+	xmlns="http://jakarta.ee/xml/ns/jakartaee">
 
-    <servlet>
-        <servlet-name>Register</servlet-name>
-        <servlet-class>todo.Register</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Register</servlet-name>
-        <url-pattern>/register</url-pattern>
-    </servlet-mapping>
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>todo.Register</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
 
-    <servlet>
-        <servlet-name>Login</servlet-name>
-        <servlet-class>todo.Login</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Login</servlet-name>
-        <url-pattern>/login</url-pattern>
-    </servlet-mapping>
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>todo.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
 
-    <servlet>
-        <servlet-name>Todo</servlet-name>
-        <servlet-class>todo.Todo</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Todo</servlet-name>
-        <url-pattern>/Todo</url-pattern>
-    </servlet-mapping>
+	<servlet>
+		<servlet-name>Todo</servlet-name>
+		<servlet-class>todo.Todo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Todo</servlet-name>
+		<url-pattern>/Todo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ForgotPassword</servlet-name>
+		<servlet-class>todo.ForgotPassword</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgotPassword</servlet-name>
+		<url-pattern>/forgot-password</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ResetPassword</servlet-name>
+		<servlet-class>todo.ResetPassword</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResetPassword</servlet-name>
+		<url-pattern>/reset-password</url-pattern>
+	</servlet-mapping>
 
 </web-app>

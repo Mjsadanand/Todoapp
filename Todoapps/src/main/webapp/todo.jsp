@@ -325,7 +325,7 @@ option {
     
 
     <div class="container">
-            <button class="btn" onclick="openModal()">Create To-Do</button>
+            <button class="btn" onclick="openModal()">Add To-Do</button>
         <h3>To-Do List</h3>
         <% if (!hasTasks) { %>
             <p class="no-tasks">No tasks found. Click "Create To-Do" to add one.</p>

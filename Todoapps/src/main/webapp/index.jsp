@@ -109,7 +109,7 @@ p {
     <div class="overlay"></div>
 
     <div class="container">
-        <h1>Welcome to Our Platform</h1>
+        <h1>Welcome to Todo Application</h1>
         <p>Make your plans for the future</p>
         <div class="buttons">
             <button class="btn btn-register" onclick="window.location.href = 'register.jsp';">Register</button>

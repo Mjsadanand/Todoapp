@@ -13,11 +13,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 public class Register extends HttpServlet {
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-
 	@Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         PrintWriter out = res.getWriter();
@@ -41,12 +37,9 @@ public class Register extends HttpServlet {
             ps.setString(4, lastName);
             ps.setString(5, dob);
             ps.setString(6, email);
-            
             int count = ps.executeUpdate();
-            
             if (count > 0) {
                 res.setContentType("text/html");
-//                out.print("<h3>Registered Successfully</h3>");
                 RequestDispatcher rd = req.getRequestDispatcher("/login.jsp");
                 rd.include(req, res);
             } else {

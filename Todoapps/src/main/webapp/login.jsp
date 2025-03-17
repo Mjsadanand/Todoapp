@@ -143,6 +143,11 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 			<p>
 				Don't have an account? <a href="register.jsp">Register here</a>
 			</p>
+			<p>
+				Forgot Password? <a href="forgot-password.jsp">Forgot Password?</a>
+			</p>
+			
+			
 		</div>
 	</div>
 </body>

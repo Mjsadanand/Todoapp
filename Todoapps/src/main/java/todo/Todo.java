@@ -33,7 +33,6 @@ public class Todo extends HttpServlet {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/todolist", "root", "Veda@718");
 
             if ("delete".equals(action)) {
-                // Handle delete action
                 int taskId = Integer.parseInt(req.getParameter("taskId"));
                 PreparedStatement ps = con.prepareStatement("DELETE FROM tasks WHERE id = ? AND username = ?");
                 ps.setInt(1, taskId);
@@ -96,7 +95,6 @@ public class Todo extends HttpServlet {
                 ps.executeUpdate();
                 res.sendRedirect("todo.jsp");
             }
-
            
         } catch (Exception e) {
             e.printStackTrace();
